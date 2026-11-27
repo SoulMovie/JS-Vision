@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(#FC466B, #3F5EFB);
+}
+.card{
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid #202938;
+    background: #676767;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px #100b2080;
+}
+h1{
+    margin: 12px 0 6px;
+    font-size: 30px;
+}
+.subtitle{
+    color: #c4bed5;
+    margin: 0 0 25px;
+}
+.field{
+    margin-bottom: 25px;
+}
+label{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+input:not([type="checbox"]){
+    width: 100%;
+    border: 1px solid #202938;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+input:focus-visible, button:focus-visible{
+    outline: 2px solid #202938;
+}

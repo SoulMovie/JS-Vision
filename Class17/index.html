@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="card">
+    <h1>Створити акаунт</h1>
+    <p class="subtitle">Приєднайтеся до нас негайно</p>
+    <form id="register-form">
+        <div class="field">
+            <label>Імя користувача</label>
+            <input type="text" id="username" autocomplete="username" placeholder="Наприклад, Іван" required>
+            <small id="username-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label>Поштовх користувача</label>
+            <input type="text" id="email" autocomplete="email" placeholder="example@ukr.net" required>
+            <small id="email-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label>Стоп слово користувача</label>
+            <input type="password" id="password" autocomplete="password" placeholder="Мінімум 8 символів" required>
+            <button id="toggle-password" class="toggle" type="button">👀</button>
+        </div>
+        <small id="pass-error" class="error"></small>
+        <div class="strength-track"><div id="strength-bar"></div></div>
+        <small id="strength-text">Надійність стоп слова: </small>
+
+        <div class="field">
+            <label>Повторіть стоп слово</label>
+            <input type="password" id="confirm-password" placeholder="Повторіть пароль" required>
+            <small id="confirm-error" class="error"></small>
+        </div>
+        <div class="field">
+            <label class="terms"><input id="terms" type="checkbox" required>Я погоджуюсь на рабство</label>
+        </div>
+
+
+    </form>
+</main>
+<script src="script.js" defer></script>
+</body>
+</html>
